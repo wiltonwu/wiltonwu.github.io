@@ -69,6 +69,8 @@
         var minutesSpan = clock.querySelector('.minutes');
         var secondsSpan = clock.querySelector('.seconds');
 
+        document.getElementById("slapsgiving").style.display = "none";
+
         function updateClock() {
           var t = getTimeRemaining(endtime);
 
@@ -77,8 +79,12 @@
           minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
           secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
+          console.log(t.total);
           if (t.total <= 0) {
             clearInterval(timeinterval);
+            document.getElementById("slapsgiving").style.display = "inline";
+            document.getElementById("countdown").style.display = "none";
+            document.getElementById("video").src = "https://www.youtube.com/embed/_6xBwQ2PV7I?autoplay=1";
           }
         }
 
@@ -92,25 +98,36 @@
       });
     </script>
   </head>
-  <body>
-    <h1>SLAP SCHEDULED</h1>
-    <div id="clockdiv">
-      <div>
-        <span class="days"></span>
-        <div class="smalltext">Days</div>
-      </div>
-      <div>
-        <span class="hours"></span>
-        <div class="smalltext">Hours</div>
-      </div>
-      <div>
-        <span class="minutes"></span>
-        <div class="smalltext">Minutes</div>
-      </div>
-      <div>
-        <span class="seconds"></span>
-        <div class="smalltext">Seconds</div>
+  <body >
+    <div id="countdown">
+      <h1>SLAP SCHEDULED</h1>
+      <div id="clockdiv">
+        <div>
+          <span class="days"></span>
+          <div class="smalltext">Days</div>
+        </div>
+        <div>
+          <span class="hours"></span>
+          <div class="smalltext">Hours</div>
+        </div>
+        <div>
+          <span class="minutes"></span>
+          <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+          <span class="seconds"></span>
+          <div class="smalltext">Seconds</div>
+        </div>
       </div>
     </div>
+    <div id="slapsgiving">
+      <h1>HAPPY SLAPSGIVING FROM MY ✋ TO YOUR 😧!!!</h1>
+      <iframe id="video" width="920" height="630" src="https://www.youtube.com/embed/_6xBwQ2PV7I?autoplay=0"></iframe>
+      <h1>🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡<br/>🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡<br/>🤡🔪🤡🤡🤡🤡🤡🤡🤡🤡</h1>
+      <img src="../assets/slap/slapsgiving.gif">
+      <h1>🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡<br/>🤡🤡🤡🤡🤡🤡🤡🌚🌝🤡<br/>🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡</h1>
+      <img src="../assets/slap/freedom.gif">
+    </div>
   </body>
+  
 </html>
