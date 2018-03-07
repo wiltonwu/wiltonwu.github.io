@@ -1,8 +1,84 @@
 <!DOCTYPE html>
+<!-- White.io, a minimalist HTML template, designed by Andy Palan (www.andypalan.com)-->
 <html>
-	<head>
-		<script>
-			window.location.href = 'https://linkedin.com/in/wiltonwu/';
-		</script>
-	</head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wilton Wu</title>
+    <meta name="description" content="White.io - A Minimalistic HTML Template"/>
+    <meta name="keywords" content=""/>
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:400|Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script src="https://use.fontawesome.com/63e7afe910.js"></script>
+</head>
+
+<body>
+    <header class="container">
+        <h1 align="center">wilton wu</h1>
+    </header>
+
+    <section class="container">
+        <div class="desktop">
+            <nav class="col-md-12">
+                <p><a href="index.html" id="currentlink">about</a></p>
+                <p><a href="./assets/docs/resume.pdf">resume</a></p>
+                <p><a href="teaching.html">teaching</a></p>
+                <p><a href="contact.html">contact</a></p>
+            </nav>
+        </div>
+        <div class="mobile">
+            <nav class="dropdown" align="center">
+                <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">about &emsp; &emsp;  <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="index.html" id="currentlink">about</a></li>
+                    <li><a class="dropdown-item" href="./assets/docs/resume.pdf">resume</a></li>
+                    <li><a class="dropdown-item" href="teaching.html">teaching</a></li>
+                    <li><a class="dropdown-item" href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <figure class="col-md-6">
+                <img src="assets/images/child.jpg" class="img-responsive center-block"/>
+                <p id="caption"></p>
+            </figure>
+            <ul class="col-md-6" id="intro-text">
+                <!-- <li><b>News:</b></li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere erat quis erat auctor bibendum. Aliquam erat volutpat. Fusce accumsan mattis placerat. Aenean maximus vel augue non sodales.</li> -->
+                <!-- <br> -->
+                <li><b>Bio:</b></li>
+                <li>I am a third year student at UC Berkeley studying Electrical Engineering and Computer Science.  My interests lie in the intersection of Data Science, Machine Learning, and Education.</li>
+                <br>
+                <li>I am currently leading the development of a new online course from UC Berkeley and edX called <a href="https://www.edx.org/professional-certificate/berkeleyx-foundations-of-data-science">Data 8X: Foundations of Data Science</a>. We're planning on launching the course in late-Spring of 2018. I've taught the <a href="http://data8.org/">on-campus version of the course</a> for four semesters.</li>
+                <br>
+                <li>Outside of Berkeley, I work as a part-time software engineer at Major League Baseball.  I'm part of the sports data team working on cool <a href="https://www.mlb.com/news/statcast-primer-baseball-will-never-be-the-same/c-119234412">advanced ball tracking software</a>.</li>
+                <br>
+                <li><b>News:</b></li>
+                <li>(Wed Mar 7 2018) Hello Valley Consuling Group.  If you want to make a website like this, go <a href="https://github.com/malayandi/winter.io">here</a></li>
+                <br>
+                <li>(Thu Feb 15 2018) <a href="https://youtu.be/YBpdL9hSac4">incredible</a></li>
+                <br>
+                
+            </ul>
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="row">
+            <p class="col-md-12" id="footnote">Design by <a href=http://www.andypalan.com>Andy Palan</a></p>
+        </div>
+    </footer>
+
+</body>
 </html>
